@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div id="main"></div>
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$('#main').append('<a href="1.jpg" download class="hidden img-down" id="my-link">hi</a> <br>');		
+	$('#main').append('<a href="2.jpg" download class="hidden img-down" id="my-link">hi</a> <br>');		
+	$('#main').append('<a href="3.jpg" download class="hidden img-down" id="my-link">hi</a> <br>');		
+
+	var elms = document.getElementsByClassName('img-down');
+	for(var key in elms){
+		console.log(elms[key]);
+		elms[key].click();
+	}
+	// console.log(elms);
+
+</script>
+
+</body>
+</html>
